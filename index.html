@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Adventure</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="home">
+            <nav>
+                <a href="index.html" class="logo">ADVENTURE</a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#tour">Tours</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#footer">About</a></li>
+                    <li><a href="#footer" class="btn">Contact</a></li>
+                </ul>
+                <img
+                    src="images/menu-btn.png"
+                    alt="menu button"
+                    class="menu-btn"
+                />
+            </nav>
+            <div class="header-main-view">
+                <h2>Explore The Colorful World</h2>
+                <div class="line"></div>
+                <h1>A WONDERFUL GIFT</h1>
+                <a href="#footer" class="btn">Learn More</a>
+            </div>
+        </header>
+
+        <main>
+            <!---  Events Section --->
+            <section class="events" id="events">
+                <div class="title">
+                    <h1>UPCOMING EVENTS</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/img1.png" alt="" />
+                        <h4>Everest Camp Trek</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laborum amet quia placeat fugit repellendus
+                            tempora.
+                        </p>
+                        <a href="#footer" class="btn">Learn More</a>
+                    </div>
+                    <div class="col">
+                        <img src="images/img2.png" alt="" />
+                        <h4>Walking Holidays</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Laborum amet quia placeat fugit repellendus
+                            tempora.
+                        </p>
+                        <a href="#footer" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Explore Section -->
+            <section class="explore" id="explore" >
+                <div class="explore-content">
+                    <h1>EXPLORE THE WORLD</h1>
+                    <div class="line"></div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Veniam corporis consequuntur fugit, iste, labore
+                        vel magnam quos assumenda eius reiciendis eos quasi
+                        dolor consequatur exercitationem nisi corrupti at sunt
+                        illum.
+                    </p>
+                    <div class="btn">Learn More</div>
+                </div>
+            </section>
+
+            <!-- Tour Section -->
+            <section class="tour" id="tour">
+                <div class="row">
+                    <div class="col text-col">
+                        <h2>UPCOMING TOURS & DISTINATION</h2>
+                        <div class="line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quas et labore soluta delectus dolorem rem
+                            facilis aspernatur neque iusto dignissimos, quod
+                            praesentium illum nemo tempora optio ab numquam
+                            voluptatibus magnam.
+                        </p>
+                        <div class="btn">Learn More</div>
+                    </div>
+                    <div class="col image-col">
+                        <div class="image-gallery">
+                            <img src="images/img3.png" alt="" />
+                            <img src="images/img4.png" alt="" />
+                            <img src="images/img5.png" alt="" />
+                            <img src="images/img6.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>
+                123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 |
+                Email: contact@exemple.com
+            </p>
+            <p>Copyright © 2023</p>
+        </footer>
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navLinks.classList.toggle("mobile-menu");
+            });
+        </script>
+    </body>
+</html>
